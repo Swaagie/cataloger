@@ -1,0 +1,29 @@
+{
+  "name": "cataloger",
+  "version": "0.0.1",
+  "description": "Markdown documentation generator. Provides API en command line tool. Requires strict input and follows JSDoc standards.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha $(find test -name '*.test.js')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Swaagie/cataloger.git"
+  },
+  "keywords": [
+    "Markdown",
+    "documentation",
+    "JSDoc",
+    "strict",
+    "generator",
+    "API",
+    "CLI",
+    "tool"
+  ],
+  "author": "Martijn Swaagman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Swaagie/cataloger/issues"
+  },
+  "homepage": "https://github.com/Swaagie/cataloger"
+}
