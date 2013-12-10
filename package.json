@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Swaagie/cataloger.git"
+    "url": "git@github.com:Moveo/cataloger.git"
   },
   "keywords": [
     "Markdown",
@@ -23,7 +23,7 @@
   "author": "Martijn Swaagman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Swaagie/cataloger/issues"
+    "url": "https://github.com/Moveo/cataloger/issues"
   },
-  "homepage": "https://github.com/Swaagie/cataloger"
+  "homepage": "https://github.com/Moveo/cataloger"
 }
