@@ -6,4 +6,4 @@
  *
  * @private
  */
-require('../lib').cli(process.argv);
+new require('../lib/cli');
