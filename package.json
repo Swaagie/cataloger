@@ -1,7 +1,7 @@
 {
   "name": "cataloger",
   "version": "0.0.1",
-  "description": "Markdown documentation generator. Provides API en command line tool. Requires strict input and follows JSDoc standards.",
+  "description": "Markdown documentation generator, provides API and command line tool",
   "main": "index.js",
   "scripts": {
     "test": "mocha $(find test -name '*.test.js')"
