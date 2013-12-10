@@ -5,4 +5,4 @@ strict input and follows JSDoc standards by using the Haruki JSON template.
 
 If you like some help with publishing the markdown pages, see [Revelation].
 
-[Revelation]: https://github.com/Moveo/Revelation
+[Revelation]: https://github.com/Moveo/revelation
