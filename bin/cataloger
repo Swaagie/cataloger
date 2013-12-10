@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+'use strict';
+
+/**
+ * Expose the command line tool.
+ *
+ * @private
+ */
+require('../lib').cli(process.argv);

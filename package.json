@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git@github.com:Moveo/cataloger.git"
   },
+  "bin": {
+    "cataloger": "./bin/cataloger"
+  },
   "keywords": [
     "Markdown",
     "documentation",
