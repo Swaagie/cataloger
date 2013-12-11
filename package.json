@@ -28,5 +28,12 @@
   "bugs": {
     "url": "https://github.com/Moveo/cataloger/issues"
   },
-  "homepage": "https://github.com/Moveo/cataloger"
+  "homepage": "https://github.com/Moveo/cataloger",
+  "dependencies": {
+    "mustache": "~0.8.0",
+    "readdirp": "~0.3.1",
+    "commander": "~2.1.0",
+    "mkdirp": "~0.3.5",
+    "colors": "~0.6.2"
+  }
 }
