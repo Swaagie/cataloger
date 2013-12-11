@@ -6,5 +6,4 @@
  *
  * @private
  */
-var Cli = require('../lib/cli');
-new Cli;
+new (require('../lib/cli'));
