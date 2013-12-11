@@ -9,8 +9,8 @@ If you like some help with publishing the markdown pages, see [Revelation].
 
 ## Features
 
-- Choose, mix and merge available documentation parsers. Currently, JSDoc and
-  Dox are supported.
+- Choose, mix and merge available documentation parsers.
+  Currently, JSDoc and Dox are available.
 - Merge documentation with wiki pages the way you see fit.
 - Documentation follows the file structure of your project.
 
