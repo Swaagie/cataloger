@@ -11,7 +11,29 @@
 //
 // Required modules.
 //
-var path = require('path');
+var path = require('path')
+  , root = path.resolve(__dirname, '../node_modules/jsdoc');
+
+//
+// Prepare global environment options for JSDoc...
+//
+global.env = {
+  dirname: root,
+  pwd: root,
+  conf: {
+    tags: { allowUnknownTags: true }
+  },
+  opts: {
+    destination: 'console',
+    template: 'templates/haruki'
+  }
+};
+
+global.app = {
+  jsdoc: {}
+};
+
+global.dump = console.log;
 
 /**
  * JSDoc wrapper constructor.
@@ -23,19 +45,6 @@ var path = require('path');
  */
 function JSDoc(options) {
   options = options || {};
-
-  //
-  // Prepare global options for JSDoc...
-  //
-  global.env = {
-    dirname: path.resolve(__dirname, '../node_modules/jsdoc'),
-    conf: {},
-    opts: {}
-  };
-
-  global.app = {
-    jsdoc: {}
-  };
 }
 
 /**
@@ -45,7 +54,9 @@ function JSDoc(options) {
  * @public
  */
 JSDoc.prototype.execute = function execute(files, fn) {
-  global.env.sourceFiles = files;
+  global.env.sourceFiles = files.map(function paths(file) {
+    return file.fullPath;
+  });
 
   //
   //
