@@ -1,0 +1,5 @@
+# {{namespace}}
+
+{{description}}
+
+## {{method}}
