@@ -11,41 +11,50 @@
 //
 // Required modules.
 //
-var path = require('path')
-  , root = path.resolve(__dirname, '../node_modules/jsdoc');
+var Collection = require('../lib/collection')
+  , async = require('async')
+  , path = require('path');
 
 //
-// Prepare global environment options for JSDoc...
+// Define root and path to parser, JSDoc cannot be included normally.
 //
-global.env = {
-  dirname: root,
-  pwd: root,
-  conf: {
-    tags: { allowUnknownTags: true }
-  },
-  opts: {
-    destination: 'console',
-    template: 'templates/haruki'
-  }
-};
-
-global.app = {
-  jsdoc: {}
-};
-
-global.dump = console.log;
+var root = path.resolve(__dirname, '../node_modules/jsdoc')
+  , parser = path.join(root, 'cli.js');
 
 /**
  * JSDoc wrapper constructor.
  *
  * @alias module:JSDoc
  * @constructor
- * @param {Object} options
  * @public
  */
-function JSDoc(options) {
-  options = options || {};
+function JSDoc() {
+  //
+  // Prepare global environment and app options for JSDoc.
+  //
+  global.env = {
+    dirname: root,
+    pwd: root,
+    opts: {
+      destination: 'console',
+      template: 'templates/haruki'
+    },
+    conf: {
+      tags: {
+        allowUnknownTags: true
+      }
+    }
+  };
+
+  global.app = {
+    jsdoc: {}
+  };
 }
+
+//
+// Expose an ID for external listing or reference.
+//
+JSDoc.prototype.id = 'JSDoc';
 
 /**
  * Execute the JSDoc comment parses with the haruki template to generate JSON
@@ -54,24 +63,67 @@ function JSDoc(options) {
  * @public
  */
 JSDoc.prototype.execute = function execute(files, fn) {
+  var jsdoc = this;
+
+  //
+  // Get the full path from the file, this mimicks jsdoc#scanFiles.
+  //
   global.env.sourceFiles = files.map(function paths(file) {
     return file.fullPath;
   });
 
   //
+  // JSDoc uses the dump method to output to stdout, overrule it. The path of
+  // found files will be merged with the results
   //
-  //
-  var parser = require('../node_modules/jsdoc/cli.js');
-  parser.createParser().parseFiles().processParseResults();
+  global.dump = function map(result) {
+    var collection = new Collection;
+    collection.add(jsdoc.merge(result.classes, files));
+    fn(null, collection);
+  };
 
-  fn(null, files);
+  //
+  // Require parser JIT so global options are set.
+  //
+  require(parser)
+    .createParser()
+    .parseFiles()
+    .processParseResults();
 };
 
-JSDoc.prototype.prepare = function prepare(files) {
-  var parser = this;
+/**
+ * Merge returned documentation with stats of each file, assume the arrays keep
+ * their order as there is no other viable way.
+ *
+ * @param {Array} docs list of documentation excerpts
+ * @param {Array} files list of source files
+ * @public
+ */
+JSDoc.prototype.merge = function merge(docs, files) {
+  var i = docs.length;
 
+  while (i--) {
+    docs[i].file = files[i];
+  }
+
+  return docs;
+};
+
+/**
+ * Prepare the execute method for async parallel processing.
+ *
+ * @param {Array} files
+ * @returns {Function} processor for
+ * @public
+ */
+JSDoc.prototype.prepare = function prepare(files) {
+  var jsdoc = this;
+
+  //
+  // This function will be consumed by async.parallel.
+  //
   return function parse(fn) {
-    parser.execute(files, fn);
+    jsdoc.execute(files, fn);
   };
 };
 
