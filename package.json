@@ -30,13 +30,13 @@
   },
   "homepage": "https://github.com/Moveo/cataloger",
   "dependencies": {
-    "mustache": "~0.8.0",
     "readdirp": "~0.3.1",
     "commander": "~2.1.0",
     "mkdirp": "~0.3.5",
     "colors": "~0.6.2",
     "async": "~0.2.9",
     "jsdoc": "~3.3.0-alpha2",
-    "dox": "~0.4.4"
+    "dox": "~0.4.4",
+    "handlebars": "~1.1.2"
   }
 }
