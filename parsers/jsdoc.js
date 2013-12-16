@@ -78,7 +78,10 @@ JSDoc.prototype.execute = function execute(files, fn) {
   //
   global.dump = function map(result) {
     var collection = new Collection;
-    collection.add(jsdoc.merge(result.classes, files));
+    collection.register(jsdoc.transform).add(
+      jsdoc.merge(result.classes, files)
+    );
+
     fn(null, collection);
   };
 
@@ -89,6 +92,19 @@ JSDoc.prototype.execute = function execute(files, fn) {
     .createParser()
     .parseFiles()
     .processParseResults();
+};
+
+/**
+ * Modify parsed data to more unverisal data source.
+ *
+ * @param {Object} data original parsed data
+ * @returns {Object} transformed data
+ * @public
+ */
+JSDoc.prototype.transform = function transform(data) {
+  data.instance = data.constructor;
+  delete data.constructor;
+  return data;
 };
 
 /**
