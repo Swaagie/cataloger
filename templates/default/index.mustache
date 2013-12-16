@@ -9,10 +9,10 @@ new {{ name }}({{ syntax parameters }});
 ```
 
 *Parameters*
-{{> parameters }}
 
+{{> parameters }}
 ---{{/ instance }}
 
-## Properties
+{{# if properties }}{{> properties }}{{/ if }}
 
-## Methods
+{{# if methods }}{{> methods }}{{/ if }}
