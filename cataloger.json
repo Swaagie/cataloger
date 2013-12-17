@@ -1,0 +1,19 @@
+{
+  "path": "/home/swaagie/projects/cataloger",
+  "output": "/catalog",
+  "exclude": [
+    "test",
+    "bin",
+    "catalog"
+  ],
+  "parsers": [
+    "jsdoc"
+  ],
+  "wiki": {
+    "include": true,
+    "map": {
+      "lib/cli.js": "index.md",
+      "lib/cataloger.js": "api.md"
+    }
+  }
+}
