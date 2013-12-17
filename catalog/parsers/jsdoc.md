@@ -9,9 +9,9 @@ new module:JSDoc();
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
-
 
 ---
 
