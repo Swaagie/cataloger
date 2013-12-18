@@ -6,6 +6,7 @@
 Construct a new Excerpt which is synonym for one file/page of the
 documentation. An Excerpt can be rendered against a template.
 
+### Syntax
 ```js
 new Excerpt(data, transform);
 ```
@@ -26,4 +27,28 @@ transform | function | process and transform data before storing
 ---
 
 
+## Methods
+
+
+### render 
+Render the excerpt by template.
+
+#### Syntax
+```js
+obj.render(cataloger)
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+cataloger | Cataloger | instance
+
+
+*Returns*
+> String - compiled content
+
+### Examples
+
+
+---
 

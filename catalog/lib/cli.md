@@ -28,14 +28,15 @@ configuration file.
 }
 ```
 
-# Interface module:Cli
+# Interface Cli
 
 
 ## Constructor
 Command line interface constructor which allows custom arguments.
 
+### Syntax
 ```js
-new module:Cli(name, argv);
+new Cli(name, argv);
 ```
 
 *Parameters*
@@ -49,4 +50,116 @@ argv | Array |
 
 
 
+## Methods
+
+
+### initialize 
+Setup the command line interface for cataloger.
+
+#### Syntax
+```js
+obj.initialize()
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+
+
+
+### Examples
+
+
+### init 
+Prepare a default `cataloger.opts` file.
+
+#### Syntax
+```js
+obj.init(destination)
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+destination | String | 
+
+
+
+### Examples
+
+
+### parsers 
+List the available parsers.
+
+#### Syntax
+```js
+obj.parsers()
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+
+
+
+### Examples
+
+
+### list 
+Split the supplied argument to create an array.
+
+#### Syntax
+```js
+obj.list(value)
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+value | String | the command line flag value
+
+
+*Returns*
+> Array - value splitted by comma
+
+### Examples
+
+
+### logo 
+Output the Cataloger ASCII logo.
+
+#### Syntax
+```js
+obj.logo()
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+
+
+*Returns*
+> Cli - fluent interface
+
+### Examples
+
+
+### help 
+Output some Cataloger command line examples.
+
+#### Syntax
+```js
+obj.help()
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+
+
+
+### Examples
+
+
+---
 

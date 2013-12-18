@@ -1,12 +1,13 @@
 
-# Interface module:Collection
+# Interface Collection
 
 
 ## Constructor
 Constructor for collection of Excerpts.
 
+### Syntax
 ```js
-new module:Collection(excerpts, transform);
+new Collection(excerpts, transform);
 ```
 
 *Parameters*
@@ -20,4 +21,104 @@ transform | function | function to transform Excerpt data.
 
 
 
+## Methods
+
+
+### add 
+Add single or multiple excerpts to the the collection.
+
+#### Syntax
+```js
+obj.add(excerpts)
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+excerpts | Array | list of documentation excerpts
+
+
+
+### Examples
+
+
+### get 
+Get a specific Excerpt from the collection.
+
+#### Syntax
+```js
+obj.get(id)
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+id | String | unique ID of the Excerpt
+
+
+*Returns*
+> Excerpt - 
+
+### Examples
+
+
+### has 
+Check the collection for the presence of a specific Excerpt.
+
+#### Syntax
+```js
+obj.has(id)
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+id | String | unique ID of the Excerpt
+
+
+*Returns*
+> Boolean - 
+
+### Examples
+
+
+### register 
+Register a default transformation function with the collection.
+
+#### Syntax
+```js
+obj.register(transform)
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+transform | function | function to transform Excerpt data.
+
+
+*Returns*
+> Collection - fluent interface
+
+### Examples
+
+
+### write 
+Render the catalog by processing each excerpt.
+
+#### Syntax
+```js
+obj.write(done)
+```
+
+*Parameters*
+parameter | type | description
+--------- | ---- | -----------
+done | function | 
+
+
+
+### Examples
+
+
+---
 
