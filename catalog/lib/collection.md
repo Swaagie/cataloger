@@ -1,4 +1,5 @@
-# module:Collection
+
+# Interface module:Collection
 
 
 ## Constructor

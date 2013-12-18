@@ -11,6 +11,8 @@
   ],
   "wiki": {
     "include": true,
+    "user": "Moveo",
+    "project": "cataloger",
     "map": {
       "lib/cli.js": "index.md",
       "lib/cataloger.js": "api.md"

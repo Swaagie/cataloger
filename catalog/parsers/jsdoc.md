@@ -1,4 +1,5 @@
-# module:JSDoc
+
+# Interface module:JSDoc
 
 
 ## Constructor
