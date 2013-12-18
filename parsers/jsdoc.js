@@ -1,5 +1,6 @@
 /**
- * Wrapper around the JSDoc parser
+ * Wrapper around the JSDoc parser.
+ *
  * @module JSDoc
  */
 
@@ -24,7 +25,7 @@ var root = path.resolve(__dirname, '../node_modules/jsdoc')
 /**
  * JSDoc wrapper constructor.
  *
- * @alias module:JSDoc
+ * @alias JSDoc
  * @constructor
  * @public
  */
