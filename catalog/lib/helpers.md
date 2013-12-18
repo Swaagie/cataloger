@@ -24,12 +24,7 @@ options | Object |
 
 
 ### mkdir 
-Create directory at provided destination.
-
-#### syntax
-```js
-obj.mkdir(next)
-```
+Create directory at provided destination. `obj.mkdir(next)`
 
 
 *parameters*
@@ -40,16 +35,12 @@ next | function | optional callback to execute after directory is created.
 
 
 
-#### examples
+#### example
 
+---
 
 ### options 
-Create a default JSON configuration file.
-
-#### syntax
-```js
-obj.options(done)
-```
+Create a default JSON configuration file. `obj.options(done)`
 
 
 *parameters*
@@ -60,8 +51,8 @@ done | function | optiona callback to call after file is written.
 
 
 
-#### examples
-
+#### example
 
 ---
+
 

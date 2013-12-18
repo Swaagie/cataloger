@@ -25,12 +25,7 @@ transform | function | function to transform Excerpt data.
 
 
 ### add 
-Add single or multiple excerpts to the the collection.
-
-#### syntax
-```js
-obj.add(excerpts)
-```
+Add single or multiple excerpts to the the collection. `obj.add(excerpts)`
 
 
 *parameters*
@@ -41,16 +36,12 @@ excerpts | Array | list of documentation excerpts
 
 
 
-#### examples
+#### example
 
+---
 
 ### get 
-Get a specific Excerpt from the collection.
-
-#### syntax
-```js
-obj.get(id)
-```
+Get a specific Excerpt from the collection. `obj.get(id)`
 
 
 *parameters*
@@ -63,16 +54,12 @@ id | String | unique ID of the Excerpt
 *returns*
 > Excerpt - 
 
-#### examples
+#### example
 
+---
 
 ### has 
-Check the collection for the presence of a specific Excerpt.
-
-#### syntax
-```js
-obj.has(id)
-```
+Check the collection for the presence of a specific Excerpt. `obj.has(id)`
 
 
 *parameters*
@@ -85,16 +72,12 @@ id | String | unique ID of the Excerpt
 *returns*
 > Boolean - 
 
-#### examples
+#### example
 
+---
 
 ### register 
-Register a default transformation function with the collection.
-
-#### syntax
-```js
-obj.register(transform)
-```
+Register a default transformation function with the collection. `obj.register(transform)`
 
 
 *parameters*
@@ -107,16 +90,12 @@ transform | function | function to transform Excerpt data.
 *returns*
 > Collection - fluent interface
 
-#### examples
+#### example
 
+---
 
 ### write 
-Render the catalog by processing each excerpt.
-
-#### syntax
-```js
-obj.write(done)
-```
+Render the catalog by processing each excerpt. `obj.write(done)`
 
 
 *parameters*
@@ -127,8 +106,8 @@ done | function |
 
 
 
-#### examples
-
+#### example
 
 ---
+
 

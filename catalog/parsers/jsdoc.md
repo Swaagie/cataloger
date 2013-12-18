@@ -22,55 +22,42 @@ parameter | type | description
 ## Methods
 
 
-### EXECUTE 
-Execute the JSDoc comment parses with the haruki template to generate JSON
-
-#### Syntax
-```js
-obj.execute()
-```
+### execute 
+Execute the JSDoc comment parses with the haruki template to generate JSON `obj.execute()`
 
 
 
-*Returns*
+*returns*
 > Object - parsed JSON reprensentation of public comments.
 
-#### Examples
+#### example
+
+---
+
+### transform 
+Modify parsed data to more unverisal data source. `obj.transform(data)`
 
 
-### TRANSFORM 
-Modify parsed data to more unverisal data source.
-
-#### Syntax
-```js
-obj.transform(data)
-```
-
-
-*Parameters*
+*parameters*
 
 parameter | type | description
 --------- | ---- | -----------
 data | Object | original parsed data
 
 
-*Returns*
+*returns*
 > Object - transformed data
 
-#### Examples
+#### example
 
+---
 
-### MERGE 
+### merge 
 Merge returned documentation with stats of each file, assume the arrays keep
-their order as there is no other viable way.
-
-#### Syntax
-```js
-obj.merge(docs, files)
-```
+their order as there is no other viable way. `obj.merge(docs, files)`
 
 
-*Parameters*
+*parameters*
 
 parameter | type | description
 --------- | ---- | -----------
@@ -79,30 +66,26 @@ files | Array | list of source files
 
 
 
-#### Examples
+#### example
+
+---
+
+### prepare 
+Prepare the execute method for async parallel processing. `obj.prepare(files)`
 
 
-### PREPARE 
-Prepare the execute method for async parallel processing.
-
-#### Syntax
-```js
-obj.prepare(files)
-```
-
-
-*Parameters*
+*parameters*
 
 parameter | type | description
 --------- | ---- | -----------
 files | Array | 
 
 
-*Returns*
+*returns*
 > function - processor for
 
-#### Examples
-
+#### example
 
 ---
+
 

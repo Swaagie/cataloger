@@ -30,44 +30,31 @@ parameter | type | description
 
 
 ### init 
-Initialize the module.
-
-#### syntax
-```js
-obj.init()
-```
+Initialize the module. `obj.init()`
 
 
 
 *returns*
 > Catalog - fluent interface
 
-#### examples
+#### example
 
+---
 
 ### view 
-Fetch and cache template content.
-
-#### syntax
-```js
-obj.view()
-```
+Fetch and cache template content. `obj.view()`
 
 
 
 *returns*
 > String - handlebar template
 
-#### examples
+#### example
 
+---
 
 ### catalog 
-Generate a catalog of the documentation.
-
-#### syntax
-```js
-obj.catalog(done)
-```
+Generate a catalog of the documentation. `obj.catalog(done)`
 
 
 *parameters*
@@ -78,16 +65,12 @@ done | function | callback called after every file is processed.
 
 
 
-#### examples
+#### example
 
+---
 
 ### write 
-Write all collections to disk.
-
-#### syntax
-```js
-obj.write(collections, done)
-```
+Write all collections to disk. `obj.write(collections, done)`
 
 
 *parameters*
@@ -99,16 +82,12 @@ done | Funtion | callback to call after writing is complete
 
 
 
-#### examples
+#### example
 
+---
 
 ### merge 
-Merge the wiki by map with the Excerpt.
-
-#### syntax
-```js
-obj.merge(collections, done)
-```
+Merge the wiki by map with the Excerpt. `obj.merge(collections, done)`
 
 
 *parameters*
@@ -120,8 +99,8 @@ done | Funtion | callback to call after merging wiki content
 
 
 
-#### examples
-
+#### example
 
 ---
+
 

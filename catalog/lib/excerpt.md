@@ -31,12 +31,7 @@ transform | function | process and transform data before storing
 
 
 ### render 
-Render the excerpt by template.
-
-#### syntax
-```js
-obj.render(cataloger)
-```
+Render the excerpt by template. `obj.render(cataloger)`
 
 
 *parameters*
@@ -49,8 +44,8 @@ cataloger | Cataloger | instance
 *returns*
 > String - compiled content
 
-#### examples
-
+#### example
 
 ---
+
 
