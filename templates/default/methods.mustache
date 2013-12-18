@@ -1,22 +1,23 @@
 ## Methods
 
 {{# functions }}
-### {{ uc name }} 
+### {{ name }} 
 {{{ description }}}
 
-#### Syntax
+#### syntax
 ```js
 obj.{{ name }}({{ syntax parameters }})
 ```
 
-*Parameters*
+{{# if parameters }}
+*parameters*
 
-{{> parameters }}
+{{> parameters }}{{/ if }}
 {{# if returns }}
-*Returns*
+*returns*
 > {{ returns.type }} - {{{ returns.description }}}{{/ if }}
 
-#### Examples
+#### examples
 
 {{/ functions }}
 ---

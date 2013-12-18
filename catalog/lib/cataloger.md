@@ -29,55 +29,48 @@ parameter | type | description
 ## Methods
 
 
-### INIT 
+### init 
 Initialize the module.
 
-#### Syntax
+#### syntax
 ```js
 obj.init()
 ```
 
-*Parameters*
-
-parameter | type | description
---------- | ---- | -----------
 
 
-*Returns*
+*returns*
 > Catalog - fluent interface
 
-### Examples
+#### examples
 
 
-### VIEW 
+### view 
 Fetch and cache template content.
 
-#### Syntax
+#### syntax
 ```js
 obj.view()
 ```
 
-*Parameters*
-
-parameter | type | description
---------- | ---- | -----------
 
 
-*Returns*
+*returns*
 > String - handlebar template
 
-### Examples
+#### examples
 
 
-### CATALOG 
+### catalog 
 Generate a catalog of the documentation.
 
-#### Syntax
+#### syntax
 ```js
 obj.catalog(done)
 ```
 
-*Parameters*
+
+*parameters*
 
 parameter | type | description
 --------- | ---- | -----------
@@ -85,18 +78,19 @@ done | function | callback called after every file is processed.
 
 
 
-### Examples
+#### examples
 
 
-### WRITE 
+### write 
 Write all collections to disk.
 
-#### Syntax
+#### syntax
 ```js
 obj.write(collections, done)
 ```
 
-*Parameters*
+
+*parameters*
 
 parameter | type | description
 --------- | ---- | -----------
@@ -105,18 +99,19 @@ done | Funtion | callback to call after writing is complete
 
 
 
-### Examples
+#### examples
 
 
-### MERGE 
+### merge 
 Merge the wiki by map with the Excerpt.
 
-#### Syntax
+#### syntax
 ```js
 obj.merge(collections, done)
 ```
 
-*Parameters*
+
+*parameters*
 
 parameter | type | description
 --------- | ---- | -----------
@@ -125,7 +120,7 @@ done | Funtion | callback to call after merging wiki content
 
 
 
-### Examples
+#### examples
 
 
 ---

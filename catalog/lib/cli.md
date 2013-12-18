@@ -53,33 +53,30 @@ argv | Array |
 ## Methods
 
 
-### INITIALIZE 
+### initialize 
 Setup the command line interface for cataloger.
 
-#### Syntax
+#### syntax
 ```js
 obj.initialize()
 ```
 
-*Parameters*
-
-parameter | type | description
---------- | ---- | -----------
 
 
 
-### Examples
+#### examples
 
 
-### INIT 
+### init 
 Prepare a default `cataloger.opts` file.
 
-#### Syntax
+#### syntax
 ```js
 obj.init(destination)
 ```
 
-*Parameters*
+
+*parameters*
 
 parameter | type | description
 --------- | ---- | -----------
@@ -87,84 +84,73 @@ destination | String |
 
 
 
-### Examples
+#### examples
 
 
-### PARSERS 
+### parsers 
 List the available parsers.
 
-#### Syntax
+#### syntax
 ```js
 obj.parsers()
 ```
 
-*Parameters*
-
-parameter | type | description
---------- | ---- | -----------
 
 
 
-### Examples
+#### examples
 
 
-### LIST 
+### list 
 Split the supplied argument to create an array.
 
-#### Syntax
+#### syntax
 ```js
 obj.list(value)
 ```
 
-*Parameters*
+
+*parameters*
 
 parameter | type | description
 --------- | ---- | -----------
 value | String | the command line flag value
 
 
-*Returns*
+*returns*
 > Array - value splitted by comma
 
-### Examples
+#### examples
 
 
-### LOGO 
+### logo 
 Output the Cataloger ASCII logo.
 
-#### Syntax
+#### syntax
 ```js
 obj.logo()
 ```
 
-*Parameters*
-
-parameter | type | description
---------- | ---- | -----------
 
 
-*Returns*
+*returns*
 > Cli - fluent interface
 
-### Examples
+#### examples
 
 
-### HELP 
+### help 
 Output some Cataloger command line examples.
 
-#### Syntax
+#### syntax
 ```js
 obj.help()
 ```
 
-*Parameters*
-
-parameter | type | description
---------- | ---- | -----------
 
 
 
-### Examples
+#### examples
 
 
 ---

@@ -30,25 +30,26 @@ transform | function | process and transform data before storing
 ## Methods
 
 
-### RENDER 
+### render 
 Render the excerpt by template.
 
-#### Syntax
+#### syntax
 ```js
 obj.render(cataloger)
 ```
 
-*Parameters*
+
+*parameters*
 
 parameter | type | description
 --------- | ---- | -----------
 cataloger | Cataloger | instance
 
 
-*Returns*
+*returns*
 > String - compiled content
 
-### Examples
+#### examples
 
 
 ---
