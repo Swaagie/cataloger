@@ -53,7 +53,7 @@ argv | Array |
 ## Methods
 
 
-### initialize 
+### INITIALIZE 
 Setup the command line interface for cataloger.
 
 #### Syntax
@@ -62,6 +62,7 @@ obj.initialize()
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 
@@ -70,7 +71,7 @@ parameter | type | description
 ### Examples
 
 
-### init 
+### INIT 
 Prepare a default `cataloger.opts` file.
 
 #### Syntax
@@ -79,6 +80,7 @@ obj.init(destination)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 destination | String | 
@@ -88,7 +90,7 @@ destination | String |
 ### Examples
 
 
-### parsers 
+### PARSERS 
 List the available parsers.
 
 #### Syntax
@@ -97,6 +99,7 @@ obj.parsers()
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 
@@ -105,7 +108,7 @@ parameter | type | description
 ### Examples
 
 
-### list 
+### LIST 
 Split the supplied argument to create an array.
 
 #### Syntax
@@ -114,6 +117,7 @@ obj.list(value)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 value | String | the command line flag value
@@ -125,7 +129,7 @@ value | String | the command line flag value
 ### Examples
 
 
-### logo 
+### LOGO 
 Output the Cataloger ASCII logo.
 
 #### Syntax
@@ -134,6 +138,7 @@ obj.logo()
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 
@@ -144,7 +149,7 @@ parameter | type | description
 ### Examples
 
 
-### help 
+### HELP 
 Output some Cataloger command line examples.
 
 #### Syntax
@@ -153,6 +158,7 @@ obj.help()
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 

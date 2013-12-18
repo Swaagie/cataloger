@@ -22,7 +22,7 @@ parameter | type | description
 ## Methods
 
 
-### execute 
+### Execute 
 Execute the JSDoc comment parses with the haruki template to generate JSON
 
 #### Syntax
@@ -31,6 +31,7 @@ obj.execute()
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 
@@ -41,7 +42,7 @@ parameter | type | description
 ### Examples
 
 
-### transform 
+### Transform 
 Modify parsed data to more unverisal data source.
 
 #### Syntax
@@ -50,6 +51,7 @@ obj.transform(data)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 data | Object | original parsed data
@@ -61,7 +63,7 @@ data | Object | original parsed data
 ### Examples
 
 
-### merge 
+### Merge 
 Merge returned documentation with stats of each file, assume the arrays keep
 their order as there is no other viable way.
 
@@ -71,6 +73,7 @@ obj.merge(docs, files)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 docs | Array | list of documentation excerpts
@@ -81,7 +84,7 @@ files | Array | list of source files
 ### Examples
 
 
-### prepare 
+### Prepare 
 Prepare the execute method for async parallel processing.
 
 #### Syntax
@@ -90,6 +93,7 @@ obj.prepare(files)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 files | Array | 

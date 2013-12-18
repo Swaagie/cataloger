@@ -29,7 +29,7 @@ parameter | type | description
 ## Methods
 
 
-### init 
+### INIT 
 Initialize the module.
 
 #### Syntax
@@ -38,6 +38,7 @@ obj.init()
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 
@@ -48,7 +49,7 @@ parameter | type | description
 ### Examples
 
 
-### view 
+### VIEW 
 Fetch and cache template content.
 
 #### Syntax
@@ -57,6 +58,7 @@ obj.view()
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 
@@ -67,7 +69,7 @@ parameter | type | description
 ### Examples
 
 
-### catalog 
+### CATALOG 
 Generate a catalog of the documentation.
 
 #### Syntax
@@ -76,6 +78,7 @@ obj.catalog(done)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 done | function | callback called after every file is processed.
@@ -85,7 +88,7 @@ done | function | callback called after every file is processed.
 ### Examples
 
 
-### write 
+### WRITE 
 Write all collections to disk.
 
 #### Syntax
@@ -94,6 +97,7 @@ obj.write(collections, done)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 collections | Collection | cataloged collections of excerpts
@@ -104,7 +108,7 @@ done | Funtion | callback to call after writing is complete
 ### Examples
 
 
-### merge 
+### MERGE 
 Merge the wiki by map with the Excerpt.
 
 #### Syntax
@@ -113,6 +117,7 @@ obj.merge(collections, done)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 collections | Collection | cataloged collections of excerpts

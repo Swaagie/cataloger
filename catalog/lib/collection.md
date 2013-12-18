@@ -24,7 +24,7 @@ transform | function | function to transform Excerpt data.
 ## Methods
 
 
-### add 
+### ADD 
 Add single or multiple excerpts to the the collection.
 
 #### Syntax
@@ -33,6 +33,7 @@ obj.add(excerpts)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 excerpts | Array | list of documentation excerpts
@@ -42,7 +43,7 @@ excerpts | Array | list of documentation excerpts
 ### Examples
 
 
-### get 
+### GET 
 Get a specific Excerpt from the collection.
 
 #### Syntax
@@ -51,6 +52,7 @@ obj.get(id)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 id | String | unique ID of the Excerpt
@@ -62,7 +64,7 @@ id | String | unique ID of the Excerpt
 ### Examples
 
 
-### has 
+### HAS 
 Check the collection for the presence of a specific Excerpt.
 
 #### Syntax
@@ -71,6 +73,7 @@ obj.has(id)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 id | String | unique ID of the Excerpt
@@ -82,7 +85,7 @@ id | String | unique ID of the Excerpt
 ### Examples
 
 
-### register 
+### REGISTER 
 Register a default transformation function with the collection.
 
 #### Syntax
@@ -91,6 +94,7 @@ obj.register(transform)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 transform | function | function to transform Excerpt data.
@@ -102,7 +106,7 @@ transform | function | function to transform Excerpt data.
 ### Examples
 
 
-### write 
+### WRITE 
 Render the catalog by processing each excerpt.
 
 #### Syntax
@@ -111,6 +115,7 @@ obj.write(done)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 done | function | 

@@ -30,7 +30,7 @@ transform | function | process and transform data before storing
 ## Methods
 
 
-### render 
+### RENDER 
 Render the excerpt by template.
 
 #### Syntax
@@ -39,6 +39,7 @@ obj.render(cataloger)
 ```
 
 *Parameters*
+
 parameter | type | description
 --------- | ---- | -----------
 cataloger | Cataloger | instance
