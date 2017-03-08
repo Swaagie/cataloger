@@ -1,5 +1,7 @@
 # Cataloger
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Swaagie/cataloger.svg)](https://greenkeeper.io/)
+
 Markdown documentation generator. Provides API en command line tool. Requires
 strict input and follows JSDoc standards. Uses Dox to process the content of files.
 Using the Haruki JSON template parser is also possible.
